@@ -66,3 +66,6 @@ jq '.' Weapon-images/weapon_9989_allguns.json
   "name": "gun",
   "instances": [[[{"x": 551, "y": 306}, ... 
 ```
+
+## Split Metadata Train & Validation
+I added `json_splitter` to split the metadata into folders. It will split data with 20% in validation and will create the corresponding directories wherever the script is run. 
