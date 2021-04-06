@@ -35,10 +35,11 @@ imagePaths = list(paths.list_images(args["input"]))
 for imagePath in imagePaths:
 
     gun_dict = {
-        "imgfile" : imagePath.split('/')[-1],    
-        "height" : 720,
-        "width" : 1280,
-        "name": 'gun',   
+        "imgfile" : imagePath.split('/')[-1],
+        "source"  : imagePath.split('/')[-2],
+        "height"  : 720,
+        "width"   : 1280,
+        "name"    : 'gun',   
         "instances": []     # if empty then no instances
     } 
     # Grab paths to objects inside an image

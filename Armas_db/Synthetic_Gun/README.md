@@ -15,10 +15,10 @@ No need to download `Weapon-images-masks` and `Weapon-images-outdoor-masks` sinc
 
 ## Explore Metadata
 The json files contatining information for every mask instance is stored within either `Weapon-images` or `Weapon-images-outdoor` along with the original images.
-To take a look at the json keys of a random json file instance, e.g., `Weapon-images-mask/weapon_9989_0.json`. Use of jq from terminal: 
+To take a look at the json keys of a random json file instance, e.g., `Weapon-images/weapon_9989_0.json`. Use of jq from terminal: 
 ```
 sudo apt-get install jq #if not installed already
-jq 'keys' Weapon-images-mask/weapon_9989_0.json
+jq 'keys' Weapon-images/weapon_9989_0.json
 ```
 ```
   "area",
@@ -61,6 +61,7 @@ jq '.' Weapon-images/weapon_9989_allguns.json
 ``` 
 ```
   "imgfile": "weapon_9989_original.png",
+  "source": "Weapon-images"
   "height": 720,
   "width": 1280,
   "name": "gun",
